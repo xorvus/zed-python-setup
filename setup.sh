@@ -7,7 +7,11 @@ install_tools() {
 }
 
 configure_zed() {
-  python3 configure_zed.py
+  if [ -f "configure_zed.py" ]; then
+    python3 configure_zed.py
+  else
+    curl -fsSL "https://raw.githubusercontent.com/xorvus/zed-python-setup/main/configure_zed.py" | python3
+  fi
 }
 
 main() {

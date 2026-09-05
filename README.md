@@ -2,19 +2,14 @@
 
 Cross-platform setup for Zed Editor Python environment with ty, ruff, format on save, and auto save.
 
-## Requirements
-- Python 3
-- Zed Editor
-
-## Usage
+## One-Line Install
 
 ### macOS / Linux
 ```bash
-./setup.sh
+curl -fsSL https://raw.githubusercontent.com/xorvus/zed-python-setup/main/setup.sh | bash
 ```
 
 ### Windows (PowerShell)
 ```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\setup.ps1
+irm https://raw.githubusercontent.com/xorvus/zed-python-setup/main/setup.ps1 | iex
 ```
